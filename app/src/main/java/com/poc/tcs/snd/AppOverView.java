@@ -29,11 +29,13 @@ public class AppOverView extends AppCompatActivity {
         });
 
         final FoldingCell fcsaving = findViewById(R.id.folding_cell_saving);
-        fcsaving.setOnClickListener(new View.OnClickListener() {
+        fcsaving.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onLongClick(View view) {
                 fcsaving.toggle(false);
+                return true;
             }
+
         });
     }
 
