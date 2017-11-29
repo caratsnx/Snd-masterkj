@@ -28,11 +28,11 @@ public class AppOverView extends AppCompatActivity {
             }
         });
 
-        final FoldingCell fc = findViewById(R.id.folding_cell);
-        fc.setOnClickListener(new View.OnClickListener() {
+        final FoldingCell fcsaving = findViewById(R.id.folding_cell_saving);
+        fcsaving.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fc.toggle(false);
+                fcsaving.toggle(false);
             }
         });
     }
