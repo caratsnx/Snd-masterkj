@@ -29,14 +29,6 @@ public class AppOverView extends AppCompatActivity  {
        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
        setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         final FoldingCell fcsaving = findViewById(R.id.folding_cell_saving);
         fcsaving.setOnLongClickListener(new View.OnLongClickListener() {
@@ -62,11 +54,34 @@ public class AppOverView extends AppCompatActivity  {
     }
     public void clickedNewTarget(View v)
     {
-       // Intent intent = new Intent(this,AddNewProduct.class);
-     //   startActivity(intent);
+        Intent intent = new Intent(this,AddTargetActivity.class);
+       startActivity(intent);
+     /*
         View slideView = findViewById(R.id.slideView);
         SlideUp slideUp = new SlideUpBuilder(slideView)
                 .withStartState(SlideUp.State.HIDDEN)
+                .withStartGravity(Gravity.BOTTOM)
+
+                //.withGesturesEnabled()
+                //.withHideSoftInputWhenDisplayed()
+                //.withInterpolator()
+                //.withAutoSlideDuration()
+                //.withLoggingEnabled()
+                //.withTouchableAreaPx()
+                //.withTouchableAreaDp()
+                //.withListeners()
+                //.withSavedState()
+                .build();
+        slideUp.show();
+*/
+    }
+    public void clickFab(View v)
+    {
+        // Intent intent = new Intent(this,AddNewProduct.class);
+        //   startActivity(intent);
+        View slideView = findViewById(R.id.slideView);
+        SlideUp slideUp = new SlideUpBuilder(slideView)
+
                 .withStartGravity(Gravity.BOTTOM)
 
                 //.withGesturesEnabled()

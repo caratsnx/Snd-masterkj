@@ -27,7 +27,8 @@
             android:name=".AppOverView"
             android:label="@string/title_activity_app_over_view"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AddNewProduct"></activity>
+        <activity android:name=".AddNewProduct" />
+        <activity android:name=".AddTargetActivity"></activity>
     </application>
 
 </manifest>

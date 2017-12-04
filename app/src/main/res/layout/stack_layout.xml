@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:visibility="invisible">
+    android:visibility="visible">
 
     <!-- content header line -->
     <RelativeLayout
@@ -54,19 +54,19 @@
         android:layout_centerHorizontal="true">
 
         <ImageView
-            android:id="@+id/head_image"
+            android:id="@+id/ahead_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
             android:src="@drawable/pic2" />
 
         <TextView
-            android:id="@+id/head_image_center_text"
+            android:id="@+id/ahead_image_center_text"
 
             style="@style/ContentImageBadgeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/head_image"
+            android:layout_alignBottom="@id/ahead_image"
             android:layout_centerHorizontal="true"
             android:paddingBottom="10dp"
             android:text=""
@@ -97,10 +97,10 @@
                 android:layout_centerVertical="true"
                 android:src="@drawable/arrow"
                 android:visibility="invisible"
-                android:id="@+id/imageView2" />
+                android:id="@+id/aimageView2" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/atextView2"
                 style="@style/ContentMainBadgeTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -111,11 +111,11 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/acccoutn"
+                android:id="@+id/aacccoutn"
                 style="@style/ContentImageBadgeText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/textView2"
+                android:layout_alignEnd="@+id/atextView2"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="17dp"
                 android:paddingBottom="10dp"
@@ -124,12 +124,12 @@
                 android:textColor="@color/mainTextColor" />
 
             <TextView
-                android:id="@+id/head_image_right_below"
+                android:id="@+id/ahead_image_right_below"
                 style="@style/ContentImageBadgeText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/acccoutn"
-                android:layout_alignBottom="@+id/acccoutn"
+                android:layout_alignBaseline="@+id/aacccoutn"
+                android:layout_alignBottom="@+id/aacccoutn"
                 android:layout_centerHorizontal="true"
                 android:paddingBottom="10dp"
                 android:paddingEnd="10dp"
@@ -138,13 +138,13 @@
                 android:textColor="@color/mainTextColor" />
 
             <TextView
-                android:id="@+id/head_image_right_text"
+                android:id="@+id/ahead_image_right_text"
                 style="@style/ContentImageBadgeText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/head_image_right_below"
-                android:layout_alignBottom="@+id/head_image_right_below"
-                android:layout_alignRight="@+id/imageView2"
+                android:layout_alignBaseline="@+id/ahead_image_right_below"
+                android:layout_alignBottom="@+id/ahead_image_right_below"
+                android:layout_alignRight="@+id/aimageView2"
                 android:paddingBottom="10dp"
                 android:paddingEnd="10dp"
                 android:textAlignment="center"
@@ -152,14 +152,14 @@
                 android:textColor="@color/mainTextColor" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/atextView3"
                 style="@style/ContentMainBadgeTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:layout_above="@+id/head_image_right_text"
-                android:layout_alignEnd="@+id/head_image_right_text"
-                android:layout_alignStart="@+id/head_image_right_text"
+                android:layout_above="@+id/ahead_image_right_text"
+                android:layout_alignEnd="@+id/ahead_image_right_text"
+                android:layout_alignStart="@+id/ahead_image_right_text"
                 android:text="AVAILABLE"
                 android:textStyle="bold" />
 
@@ -199,7 +199,7 @@
                 android:layout_weight="1">
 
                 <TextView
-                    android:id="@+id/content_from_badge"
+                    android:id="@+id/acontent_from_badge"
                     style="@style/ContentMainBadgeTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -209,20 +209,20 @@
                     android:text="House" />
 
                 <TextView
-                    android:id="@+id/content_from_address_1"
+                    android:id="@+id/acontent_from_address_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@id/content_from_badge"
-                    android:layout_below="@id/content_from_badge"
+                    android:layout_alignStart="@id/acontent_from_badge"
+                    android:layout_below="@id/acontent_from_badge"
                     android:text="Available Funds"
                     style="@style/ContentMainBadgeTitle" />
 
                 <TextView
-                    android:id="@+id/content_from_address_2"
+                    android:id="@+id/acontent_from_address_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@id/content_from_address_1"
-                    android:layout_below="@id/content_from_address_1"
+                    android:layout_alignStart="@id/acontent_from_address_1"
+                    android:layout_below="@id/acontent_from_address_1"
                     android:text="€ 15000"
                     android:textColor="@android:color/holo_green_dark"
                     android:textSize="14sp" />
@@ -235,7 +235,7 @@
                 android:layout_weight="1">
 
                 <TextView
-                    android:id="@+id/content_to_badge"
+                    android:id="@+id/acontent_to_badge"
                     style="@style/ContentMainBadgeTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -245,20 +245,20 @@
                     android:text="@string/to_badge" />
 
                 <TextView
-                    android:id="@+id/content_to_address_1"
+                    android:id="@+id/acontent_to_address_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@id/content_to_badge"
-                    android:layout_below="@id/content_to_badge"
+                    android:layout_alignStart="@id/acontent_to_badge"
+                    android:layout_below="@id/acontent_to_badge"
                     android:text="Savings goal"
                     style="@style/ContentMainBadgeTitle"  />
 
                 <TextView
-                    android:id="@+id/content_to_address_2"
+                    android:id="@+id/acontent_to_address_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@id/content_to_address_1"
-                    android:layout_below="@id/content_to_address_1"
+                    android:layout_alignStart="@id/acontent_to_address_1"
+                    android:layout_below="@id/acontent_to_address_1"
                     android:text="€25000"
                     android:textColor="@android:color/holo_green_dark"
                     android:textSize="14sp" />
@@ -297,7 +297,7 @@
                 android:layout_weight="1">
 
                 <TextView
-                    android:id="@+id/content_delivery_date_badge"
+                    android:id="@+id/acontent_delivery_date_badge"
                     style="@style/ContentMainBadgeTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -307,21 +307,21 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/content_delivery_time"
+                    android:id="@+id/acontent_delivery_time"
                     style="@style/ContentMainBadgeTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@id/content_delivery_date_badge"
-                    android:layout_below="@id/content_delivery_date_badge"
+                    android:layout_alignStart="@id/acontent_delivery_date_badge"
+                    android:layout_below="@id/acontent_delivery_date_badge"
 
                     android:text="Available funds" />
 
                 <TextView
-                    android:id="@+id/content_delivery_date2"
+                    android:id="@+id/acontent_delivery_date2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@id/content_delivery_time"
-                    android:layout_below="@id/content_delivery_time"
+                    android:layout_alignStart="@id/acontent_delivery_time"
+                    android:layout_below="@id/acontent_delivery_time"
                     android:text="€ 50000"
                     android:textColor="@android:color/holo_green_dark"
                     android:textSize="14sp" />
@@ -335,7 +335,7 @@
                 android:layout_weight="1">
 
                 <TextView
-                    android:id="@+id/content_deadline_badge"
+                    android:id="@+id/acontent_deadline_badge"
                     style="@style/ContentMainBadgeTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -345,31 +345,31 @@
                     android:text="" />
 
                 <TextView
-                    android:id="@+id/content_deadline_time"
+                    android:id="@+id/acontent_deadline_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/content_deadline_badge"
+                    android:layout_below="@+id/acontent_deadline_badge"
                     android:text = "Savings goal"
 
                     style="@style/ContentMainBadgeTitle"  />
 
                 <TextView
-                    android:id="@+id/content_deadline_date"
+                    android:id="@+id/acontent_deadline_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@id/content_deadline_time"
-                    android:layout_below="@id/content_deadline_time"
+                    android:layout_alignStart="@id/acontent_deadline_time"
+                    android:layout_below="@id/acontent_deadline_time"
                     android:text=""
                     android:textColor="@color/mainTextColor"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/content_delivery_date"
+                    android:id="@+id/acontent_delivery_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/content_deadline_time"
+                    android:layout_below="@+id/acontent_deadline_time"
 
                     android:text="€ 42500"
                     android:textColor="@android:color/holo_green_dark"
@@ -391,7 +391,7 @@
 
         <!-- request button -->
         <TextView
-            android:id="@+id/content_request_btn"
+            android:id="@+id/acontent_request_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
