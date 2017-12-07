@@ -85,7 +85,50 @@
         android:paddingRight="20dp"
         android:paddingTop="15dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
         <!-- avatar and name part -->
+        <CheckBox
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="10dp"
+            android:text="House" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:checked="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Collage" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:checked="true"
+                android:visibility="gone"
+                android:id="@+id/changecheckbox"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Collage" />
+
+            </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="9dp"
+            android:src="@color/contentDividerLine" />
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
@@ -111,7 +154,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/acccoutn"
+                android:id="@+id/acccount"
                 style="@style/ContentImageBadgeText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -128,8 +171,8 @@
                 style="@style/ContentImageBadgeText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/acccoutn"
-                android:layout_alignBottom="@+id/acccoutn"
+                android:layout_alignBaseline="@+id/acccount"
+                android:layout_alignBottom="@+id/acccount"
                 android:layout_centerHorizontal="true"
                 android:paddingBottom="10dp"
                 android:paddingEnd="10dp"
@@ -148,7 +191,7 @@
                 android:paddingBottom="10dp"
                 android:paddingEnd="10dp"
                 android:textAlignment="center"
-                android:text="€ 25000"
+                android:text="€ 57000"
                 android:textColor="@color/mainTextColor" />
 
             <TextView
@@ -169,10 +212,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-
-
-
-
                 android:text="GOAL"
                 android:textStyle="bold" />
 
@@ -223,7 +262,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignStart="@id/content_from_address_1"
                     android:layout_below="@id/content_from_address_1"
-                    android:text="€ 15000"
+                    android:text="€ 14500"
                     android:textColor="@android:color/holo_green_dark"
                     android:textSize="14sp" />
 
@@ -259,7 +298,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignStart="@id/content_to_address_1"
                     android:layout_below="@id/content_to_address_1"
-                    android:text="€25000"
+                    android:text="€ 25000"
                     android:textColor="@android:color/holo_green_dark"
                     android:textSize="14sp" />
 
@@ -322,7 +361,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignStart="@id/content_delivery_time"
                     android:layout_below="@id/content_delivery_time"
-                    android:text="€ 50000"
+                    android:text="€ 42500"
                     android:textColor="@android:color/holo_green_dark"
                     android:textSize="14sp" />
 
@@ -371,7 +410,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/content_deadline_time"
 
-                    android:text="€ 42500"
+                    android:text="€ 50000"
                     android:textColor="@android:color/holo_green_dark"
                     android:textSize="14sp" />
 
@@ -388,7 +427,109 @@
             </RelativeLayout>
 
         </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="7dp"
+            android:src="@color/contentDividerLine" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:id="@+id/linear_newpart"
+            android:visibility="gone"
+            android:orientation="horizontal">
 
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/name_of_target"
+                    style="@style/ContentMainBadgeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Collage"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/content_delivery_time1"
+                    style="@style/ContentMainBadgeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/name_of_target"
+                    android:layout_below="@id/name_of_target"
+
+                    android:text="Available funds" />
+
+                <TextView
+                    android:id="@+id/savinggoal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/content_delivery_time1"
+                    android:layout_below="@id/content_delivery_time1"
+                    android:text="€ 0"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/content_deadline_badge1"
+                    style="@style/ContentMainBadgeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_alignParentStart="true"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/content_deadline_time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/content_deadline_badge1"
+                    android:text = "Savings goal"
+
+                    style="@style/ContentMainBadgeTitle"  />
+
+
+                <TextView
+                    android:id="@+id/savinggoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/content_deadline_time1"
+
+                    android:text="€ 50000"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentEnd="true"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="3dp"
+
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/perc3" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- request button -->
         <!-- request button -->
         <TextView
             android:id="@+id/content_request_btn"

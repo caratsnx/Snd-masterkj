@@ -12,11 +12,11 @@ import android.text.Layout;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
-import com.mancj.slideup.SlideUp;
-import com.mancj.slideup.SlideUpBuilder;
 import com.ramotion.foldingcell.FoldingCell;
 
 
@@ -40,85 +40,31 @@ public class AppOverView extends AppCompatActivity  {
 
         });
 
-       // initVerticalStepper();
+        Bundle extras = getIntent().getExtras();
+        if (getIntent().getExtras()!= null)
+        {
+            ((LinearLayout)findViewById(R.id.linear_newpart)).setVisibility(View.VISIBLE);
+
+            ((TextView)findViewById(R.id.title_no_account2)).setText("3");
+            ((TextView)findViewById(R.id.acccount)).setText("3");
+            ((CheckBox)findViewById(R.id.changecheckbox)).setVisibility(View.VISIBLE);
+            ((CheckBox)findViewById(R.id.changecheckbox)).setText( extras.get("TargetName").toString());
+            ((TextView)findViewById(R.id.head_image_right_below)).setText("€" +  String.valueOf(75000 + Integer.parseInt((extras.get("TargetAmount").toString()))));
+            ((TextView)findViewById(R.id.name_of_target )).setText(extras.get("TargetName").toString());
+            ((TextView)findViewById(R.id.savinggoal)).setText("€" +  extras.get("TargetAmount").toString());
+
+
+        }
+
+
     }
-    public void initVerticalStepper()
-    {
-        String[] mySteps = {"Name", "Email", "Phone Number"};
-        int colorPrimary = ContextCompat.getColor(getApplicationContext(), R.color.colorPrimary);
-        int colorPrimaryDark = ContextCompat.getColor(getApplicationContext(), R.color.colorPrimaryDark);
 
-        // Finding the view
-
-
-    }
     public void clickedNewTarget(View v)
     {
         Intent intent = new Intent(this,AddTargetActivity.class);
        startActivity(intent);
-     /*
-        View slideView = findViewById(R.id.slideView);
-        SlideUp slideUp = new SlideUpBuilder(slideView)
-                .withStartState(SlideUp.State.HIDDEN)
-                .withStartGravity(Gravity.BOTTOM)
 
-                //.withGesturesEnabled()
-                //.withHideSoftInputWhenDisplayed()
-                //.withInterpolator()
-                //.withAutoSlideDuration()
-                //.withLoggingEnabled()
-                //.withTouchableAreaPx()
-                //.withTouchableAreaDp()
-                //.withListeners()
-                //.withSavedState()
-                .build();
-        slideUp.show();
-*/
-    }
-    public void clickFab(View v)
-    {
-        // Intent intent = new Intent(this,AddNewProduct.class);
-        //   startActivity(intent);
-        View slideView = findViewById(R.id.slideView);
-        SlideUp slideUp = new SlideUpBuilder(slideView)
-
-                .withStartGravity(Gravity.BOTTOM)
-
-                //.withGesturesEnabled()
-                //.withHideSoftInputWhenDisplayed()
-                //.withInterpolator()
-                //.withAutoSlideDuration()
-                //.withLoggingEnabled()
-                //.withTouchableAreaPx()
-                //.withTouchableAreaDp()
-                //.withListeners()
-                //.withSavedState()
-                .build();
-        slideUp.show();
     }
 
-    private View createNameStep() {
-        // Here we generate programmatically the view that will be added by the system to the step content layout
-        EditText name = new EditText(this);
-        name.setSingleLine(true);
-        name.setHint("Your name");
-
-        return name;
-    }
-
-   // private View createEmailStep() {
-        // In this case we generate the view by inflating a XML file
-     //   LayoutInflater inflater = LayoutInflater.from(getBaseContext());
-      // LinearLayout emailLayoutContent = (LinearLayout) inflater.inflate(R.layout.email_step_layout, null, false);
-       // EditText email = (EditText) emailLayoutContent.findViewById(R.id.email);
-        //return emailLayoutContent;
-   // }
-
-    //private View createPhoneNumberStep() {
-     //   LayoutInflater inflater = LayoutInflater.from(getBaseContext());
-      //  LinearLayout phoneLayoutContent = (LinearLayout) inflater.inflate(R.layout.phone_step_layout, null, false);
-
-       // return phoneLayoutContent;
-   // }
 
 }

@@ -37,13 +37,13 @@
             android:gravity="center"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
-            android:text="50€ @ albert"
+            android:text="Account"
             android:textColor="@android:color/white"
             android:textSize="10sp" />
 
         <TextView
             android:id="@+id/title_date_label"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@id/title_time_label"
             android:layout_alignParentStart="true"
@@ -51,12 +51,13 @@
             android:singleLine="true"
             android:marqueeRepeatLimit="marquee_forever"
             android:ellipsize="marquee"
-            android:text="Last Transaction"
+            android:text="Savings"
             android:focusable="true"
+            android:gravity="center"
             android:selectAllOnFocus="true"
             android:focusedByDefault="true"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="9sp" />
+            android:textColor="@color/white"
+            android:textSize="10sp" />
 
 
     </RelativeLayout>
@@ -159,10 +160,10 @@
             android:gravity="center"
             android:layout_above="@+id/title_pledge"
             android:layout_alignStart="@+id/title_pledge"
-            android:text="# Saving Account" />
+            android:text="# Saving Target" />
 
         <TextView
-            android:id="@+id/title_no_account"
+            android:id="@+id/title_no_account2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/title_pledge"

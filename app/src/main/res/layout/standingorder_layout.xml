@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/layout_so"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/nice_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="Frequency  " />
+
+        <TextView
+            android:id="@+id/startdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start Date"
+            android:onClick="clickStartDate"
+
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/enddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="End Date"
+            android:onClick="clickEndDate"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/colorPrimaryDark"
+
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_pinsparen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Target %"
+
+    android:layout_marginBottom="8dp"
+    style="@style/TitleBadgeTitle"
+    />
+            <co.ceryle.radiorealbutton.RadioRealButtonGroup
+                android:id="@+id/group_pinsparen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrbg_animateDrawables_enter="overshoot"
+                app:rrbg_animateTexts_enter="overshoot"
+                app:rrbg_dividerColor="@color/black"
+                app:rrbg_radius="6dp"
+                app:rrbg_selectorColor="@color/colorPrimaryDark"
+                app:rrbg_selectorSize="6dp">
+
+                <co.ceryle.radiorealbutton.RadioRealButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:forceHasOverlappingRendering="true"
+
+                    app:rrb_drawableGravity="right"
+                    app:rrb_drawableHeight="36dp"
+                    app:rrb_drawablePadding="8dp"
+                    app:rrb_drawableWidth="36dp"
+                    app:rrb_ripple="true"
+                    app:rrb_text="1%"
+                    app:rrb_textColor="@color/black"
+                    app:rrb_textGravity="right"
+                    app:rrb_textSize="10sp" />
+
+
+                <co.ceryle.radiorealbutton.RadioRealButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:forceHasOverlappingRendering="true"
+
+                    app:rrb_drawableGravity="right"
+                    app:rrb_drawableHeight="36dp"
+                    app:rrb_drawablePadding="8dp"
+                    app:rrb_drawableWidth="36dp"
+                    app:rrb_ripple="true"
+                    app:rrb_rippleColor="@color/black"
+                    app:rrb_text="5%"
+
+                    app:rrb_textColor="@color/black"
+                    app:rrb_textGravity="right"
+                    app:rrb_textSize="12sp" />
+
+                <co.ceryle.radiorealbutton.RadioRealButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    app:rrb_drawableGravity="right"
+                    app:rrb_drawableHeight="36dp"
+                    app:rrb_drawablePadding="8dp"
+                    app:rrb_drawableWidth="36dp"
+                    app:rrb_ripple="true"
+                    app:rrb_rippleColor="@color/black"
+                    app:rrb_text="10%"
+
+                    app:rrb_textColor="@color/black"
+                    app:rrb_textGravity="center"
+                    app:rrb_textSize="12sp" />
+            </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From Account"
+                android:layout_marginTop="8dp"
+                style="@style/TitleBadgeTitle"
+                />
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/nice_spinner_pinsparen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:hint="Current Account  " />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_tikkie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:layout_margin ="8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+
+            />
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/nice_spinner_tikkie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin ="8dp"
+
+
+            android:hint="€ ..  " />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop ="14dp"
+            android:src="@android:drawable/ic_menu_share"
+            />
+    </LinearLayout>
+</LinearLayout>

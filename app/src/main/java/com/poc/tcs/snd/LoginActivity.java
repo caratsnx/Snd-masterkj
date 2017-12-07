@@ -70,17 +70,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
-        mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
-        populateAutoComplete();
-
-        mPasswordView = (EditText) findViewById(R.id.password);
 
 
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
-
-        mLoginFormView = findViewById(R.id.login_form);
-        mProgressView = findViewById(R.id.login_progress);
-        CustomPagerAdapter mCustomPagerAdapter = new CustomPagerAdapter(this);
+ CustomPagerAdapter mCustomPagerAdapter = new CustomPagerAdapter(this);
 
         final HorizontalInfiniteCycleViewPager infiniteCycleViewPager =
                 (HorizontalInfiniteCycleViewPager) findViewById(R.id.infinityPager);

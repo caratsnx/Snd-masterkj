@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.TextInputEditText
-        android:id="@+id/email"
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="08:30"
-        android:paddingRight="24dp"
-        android:paddingEnd="24dp"
-        android:textSize="42sp"
-        android:clickable="true" />
-
-</LinearLayout>
+        android:layout_height="wrap_content" />
+</FrameLayout>

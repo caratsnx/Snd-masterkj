@@ -35,26 +35,27 @@
             android:gravity="center"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
-            android:text="50€ @ albert"
+            android:text="Account"
             android:textColor="@android:color/white"
             android:textSize="10sp" />
 
         <TextView
             android:id="@+id/title_date_label"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@id/title_time_label"
             android:layout_alignParentStart="true"
             android:layout_marginBottom="2dp"
             android:singleLine="true"
+            android:gravity="center"
             android:marqueeRepeatLimit="marquee_forever"
             android:ellipsize="marquee"
-            android:text="Last Transaction"
+            android:text="Personal"
             android:focusable="true"
             android:selectAllOnFocus="true"
             android:focusedByDefault="true"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="9sp" />
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
 
 
     </RelativeLayout>
@@ -157,16 +158,16 @@
             android:gravity="center"
             android:layout_above="@+id/title_pledge"
             android:layout_alignStart="@+id/title_pledge"
-            android:text="# Saving Account" />
+            android:text="Last Transaction" />
 
         <TextView
-            android:id="@+id/title_no_account"
+            android:id="@+id/title_no_account1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/title_pledge"
             android:layout_alignBottom="@+id/title_pledge"
             android:layout_toEndOf="@+id/title_pledge"
-            android:text="2"
+            android:text="50€ @ albert "
             android:gravity="center"
             android:textColor="@color/colorPrimaryDark" />
 

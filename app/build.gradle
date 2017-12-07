@@ -31,11 +31,15 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'com.github.devlight:infinitecycleviewpager:1.0.2'
     compile 'com.ramotion.foldingcell:folding-cell:1.2.1'
-    compile 'com.ramotion.cardslider:card-slider:0.1.0'
-    compile 'com.github.mancj:SlideUp-Android:2.2.7.1'
     compile 'com.ernestoyaquello.stepperform:vertical-stepper-form:0.9.9'
+    compile 'com.michaelmuenzer.android:ScrollableNumberPicker:0.2.2'
     compile 'link.fls:swipestack:0.3.0'
-
+    compile 'com.github.jhonnyx2012:horizontal-picker:1.0.6'
+    compile 'devs.mulham.horizontalcalendar:horizontalcalendar:1.2.0'
+    compile 'net.codecrafted:lineartimepicker:1.0.0'
+    compile 'com.github.ceryle:RadioRealButton:v2.1.1'
+    compile 'com.github.arcadefire:nice-spinner:1.3.3'
+    compile 'me.philio:pinentryview:1.0.6'
 }
 
 
